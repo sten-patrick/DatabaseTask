@@ -7,8 +7,19 @@ namespace DatabaseTask.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string Name { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public DateTime HireDate { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public int Salary { get; set; }
+        public string Address { get; set; }
+
+
+        public IEnumerable<Group> Groups { get; set; } = new List<Group>();
+
+
+
 
         /// ESIMENE HINDELINE HARJUTUS
         /// Nõuded ja tegevus:
